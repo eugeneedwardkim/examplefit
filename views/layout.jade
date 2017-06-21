@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(href="//fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    script(src="/jquery/jquery.min.js")
+    script(src="/materialize/js/materialize.min.js")
+    link(href="/materialize/css/materialize.min.css" rel="stylesheet")
+    - src = process.env.NODE_ENV === 'production' ? '/vendor.js' : 'http://localhost:8080/vendor.js'
+    //
+      vizuly css and javascript
+      link(rel='stylesheet', href='vendor/css/vizuly.css')
+      link(rel='stylesheet', href='vendor/css/vizuly_radial_progress.css')
+      script(src="/vendor/js/d3.min.js")
+      script(src="/vendor/js/vizuly_core.min.js")
+      script(src="/vendor/js/vizuly_radialprogress.min.js")
+  body
+    block content

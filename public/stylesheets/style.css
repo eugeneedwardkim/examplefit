@@ -1,0 +1,215 @@
+nav .brand-logo{
+    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    left:65px;
+}
+
+nav .brand-logo:before{
+  content:'';
+  display:inline-block;
+  width:50px;
+  height:50px;
+  background-image: url(../images/logo-finner.png);
+  background-repeat:no-repeat;
+  background-size:50px 50px;
+  position: absolute;
+  left: -55px;
+  top: 7px;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  /* Retina-specific stuff here */
+  nav .brand-logo:before{
+    background-image: url(../images/logo-finner@2x.png);
+  }
+}
+
+nav ul li.active{
+  background-color: rgba(224, 242, 241, 0.3) !important;
+}
+
+/* =======================================
+
+Component Styles
+
+======================================= */
+
+
+/* Calories Graph
+--------------------------------------- */
+
+.calorie-graph{
+  margin:2em 0;
+  padding:1em;
+}
+
+.calorie-graph .row{margin-bottom:0;}
+
+.calorie-graph .calories-consumed{padding-left:0.5em;}
+
+.cal-eaten-num{
+  color:#ef6c00;
+  line-height:1;
+  font-size:5em;
+}
+
+.cal-eaten-text{
+  display:block;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cal-left{
+    background-color: rgba(255,255,255, 0.7);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    border: 3px solid #fff;
+}
+
+.cal-left-num{
+  line-height:1;
+  font-size:4.25em;
+  color: #8bc34a;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+.cal-left p{
+  margin:0;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.calories-consumed p{
+  color:#666;
+}
+
+/* Joke
+--------------------------------------- */
+
+.joke h5{font-style:italic;}
+
+.joke blockquote{
+  position:relative;
+  border-left: 0;
+    font-size: 2em;
+    color: #666;
+    font-style: italic;
+    padding: 1em 2em;
+}
+
+.joke blockquote:before{
+    content: "“";
+    font-size: 5em;
+    color: #ef6c00;
+    position: absolute;
+    left: -25px;
+    top: -50px;
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+
+
+/* Home
+--------------------------------------- */
+
+#index-banner{
+  height: 350px !important;
+	background:
+		-webkit-linear-gradient(45deg, hsla(172, 96%, 49%, 1) 0%, hsla(172, 96%, 49%, 0) 70%),
+		-webkit-linear-gradient(315deg, hsla(202, 98%, 46%, 1) 10%, hsla(202, 98%, 46%, 0) 80%),
+		-webkit-linear-gradient(225deg, hsla(139, 97%, 50%, 1) 10%, hsla(139, 97%, 50%, 0) 80%),
+		-webkit-linear-gradient(135deg, hsla(75, 98%, 41%, 1) 100%, hsla(75, 98%, 41%, 0) 70%);
+	background:
+		linear-gradient(45deg, hsla(172, 96%, 49%, 1) 0%, hsla(172, 96%, 49%, 0) 70%),
+		linear-gradient(135deg, hsla(202, 98%, 46%, 1) 10%, hsla(202, 98%, 46%, 0) 80%),
+		linear-gradient(225deg, hsla(139, 97%, 50%, 1) 10%, hsla(139, 97%, 50%, 0) 80%),
+		linear-gradient(315deg, hsla(75, 98%, 41%, 1) 100%, hsla(75, 98%, 41%, 0) 70%);
+}
+
+/* Boostrap Alerts
+---------------------------------------- */
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #245269;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #66512c;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}
